@@ -4,8 +4,8 @@ import {
     PageHeader,
     PageHeaderDescription
 } from "@/components/ui/page-nav"
-import Typewriter from "./components/alternating-text"
-import { LayoutProps } from '@/utils/types'
+import Typewriter from "@/components/alternatingText"
+import { LayoutProps } from '@/types/types'
 
 const metadata = {
     title: {
@@ -19,6 +19,7 @@ const metadata = {
         "TSX",
         "Next.js",
         "TypeScript",
+        "React",
     ],
     openGraph: {
         type: "website",
@@ -36,7 +37,7 @@ const metadata = {
     manifest: "https://remcostoeten.nl/site.webmanifest",
 }
 
-export default function ConverterLayout({ children }: LayoutProps) {
+export default function ConverterLayout({ children }) {
     return (
         <>
             <Head>

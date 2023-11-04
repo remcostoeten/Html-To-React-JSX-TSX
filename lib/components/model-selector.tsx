@@ -3,7 +3,7 @@
 'use client';
 
 import { AnimatePresence, motion } from 'framer-motion';
-import { AppContext } from '@context/AppContext';
+import { AppContext } from '@/context/AppContext';
 import { Collapsible, CollapsibleContent } from '@radix-ui/react-collapsible';
 import { Label } from '@/components/ui/label';
 import { Switch } from '@/components/ui/switch';

@@ -11,8 +11,15 @@ import { Label } from '@/components/ui/label';
 import { Tabs, TabsContent } from '@/components/ui/tabs';
 import { Textarea } from '@/components/ui/textarea';
 
-import { AppContext } from './AppContext';
+import { AppContext } from '@/context/AppContext';
 import { models, types } from '@/data/models';
+import ModelSelector from '@/lib/components/model-selector';
+import PropsEditor from '@/lib/components/props-editor';
+import { PresetShare } from '@/lib/components/preset-share';
+import { PresetActions } from '@/lib/components/preset-actions';
+import { MaxLengthSelector } from '@/lib/components/maxlength-selector';
+import { PresetSave } from '@/lib/components/preset-save';
+import { CodeViewer } from '@/lib/components/code-viewer';
 
 export default function PlaygroundPage() {
     const [code, setCode] = useState<string | undefined>('// Enter HTML here');
