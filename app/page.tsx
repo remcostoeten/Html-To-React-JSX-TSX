@@ -284,7 +284,7 @@ export default function PlaygroundPage() {
                     className='overflow-hidden black-block black-block--section shadow'
                 >
                     <div className='flex-col hidden h-full md:flex '>
-                        <div className=' relative mb-1.5 mt-8 flex items-start justify-between space-y-2 pb-4 pl-4 pt-4 sm:flex-row sm:items-end sm:space-y-0.5 md:h-16'>
+                        <div className=' relative mb-1.5 mt-4 flex items-start justify-between space-y-2 pb-4 pl-4 pt-4 sm:flex-row sm:items-end sm:space-y-0.5 md:h-16'>
                             <div className='flex flex-col gap-2 w-min'>
 
                                 <Input

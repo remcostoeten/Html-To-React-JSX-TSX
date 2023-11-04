@@ -55,7 +55,6 @@ export default function RootLayout({
         <meta name="keywords" content={metadata.keywords.join(', ')} />
         <meta property="og:title" content={metadata.openGraph.title} />
         <meta property="og:description" content={metadata.openGraph.description} />
-        <meta property="og:url" content={metadata.openGraph.url} />
         <meta property="og:type" content={metadata.openGraph.type} />
         <meta property="og:locale" content={metadata.openGraph.locale} />
         <meta property="og:site_name" content={metadata.openGraph.siteName} />
