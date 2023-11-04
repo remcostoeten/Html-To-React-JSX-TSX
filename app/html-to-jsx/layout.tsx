@@ -61,7 +61,7 @@ export default function ConverterLayout({ children }) {
                     <link rel="apple-touch-icon" href={metadata.icons.apple} />
                     <link rel="manifest" href={metadata.manifest} />
                 </Head>
-                <div className='mx-auto w-[1280px]'>
+                <div className='mx-auto w-[1280px] flex flex-col-reverse'>
                     <div className='black-block relative container section black-block--section rounded-sm'>
                         <div style={{ position: 'absolute', right: '0', top: '0', zIndex: 9999 }}>
                             <CustomStatusBadge title="beta" emojiKey="rocket" index={0} />

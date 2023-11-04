@@ -293,11 +293,8 @@ export default function PlaygroundPage() {
                 >
                     <div className='container'>
                         <div className='flex-col hidden h-full md:flex '>
-                            <div className=' relative mb-1.5 mt-8 flex items-start justify-between space-y-2 pb-4 pl-4 pt-0 pt-4 sm:flex-row sm:items-end sm:space-y-0.5 md:h-16'>
+                            <div className=' relative mb-1.5 mt-8 flex items-start justify-between space-y-2 pb-4 pl-4 pt-0 pt-4 sm:flex-row gap-2  sm:space-y-0.5 md:h-16'>
                                 <div className='flex flex-col gap-2 w-min'>
-                                    <Label className='translate-x-2.5'>
-                                        What is the component name?
-                                    </Label>
                                     <Input
                                         type='text'
                                         className='note-border placeholder:text-red-400] jsx-input w-[auto]'
@@ -557,12 +554,6 @@ export default function PlaygroundPage() {
                                     </div>
                                 </div>
                             </Tabs>
-                            <div className='flex gap-2 p-3 m-3'>
-                                <PresetSave />
-                                <CodeViewer />
-                                <PresetShare />
-                                <PresetActions />
-                            </div>
                         </div>
                     </div>
                 </motion.div>
