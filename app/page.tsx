@@ -1,11 +1,10 @@
 'use client';
 
 import { Editor } from '@monaco-editor/react';
-import { CopyIcon, CounterClockwiseClockIcon } from '@radix-ui/react-icons';
+import { CopyIcon } from '@radix-ui/react-icons';
 import { motion } from 'framer-motion';
 import { useCallback, useEffect, useRef, useState } from 'react';
 
-import { Button } from '@/components/ui/button';
 import { Input } from '@/components/ui/input';
 import { Label } from '@/components/ui/label';
 import { Tabs, TabsContent } from '@/components/ui/tabs';
@@ -13,12 +12,8 @@ import { Textarea } from '@/components/ui/textarea';
 
 import { AppContext } from '@/context/AppContext';
 import PropsEditor from '@/components/props-editor';
-import { CodeViewer } from '@/components/code-viewer';
 import { MaxLengthSelector } from '@/components/maxlength-selector';
 import ModelSelector from '@/components/model-selector';
-import { PresetActions } from '@/components/preset-actions';
-import { PresetSave } from '@/components/preset-save';
-import { PresetShare } from '@/components/preset-share';
 import { models, types } from '@/data/models';
 
 export default function PlaygroundPage() {
@@ -284,7 +279,7 @@ export default function PlaygroundPage() {
                     className='overflow-hidden black-block black-block--section shadow'
                 >
                     <div className='flex-col hidden h-full md:flex '>
-                        <div className=' relative mb-1.5 mt-4 flex items-start justify-between space-y-2 pb-4 pl-4 pt-4 sm:flex-row sm:items-end sm:space-y-0.5 md:h-16'>
+                        <div className=' relative mb-1.5 mt-4 flex items-start justify-between space-y-2 pb-4 pl-4 pt-4 sm:flex-row gap-4 sm:space-y-0.5 md:h-16'>
                             <div className='flex flex-col gap-2 w-min'>
 
                                 <Input

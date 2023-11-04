@@ -42,6 +42,7 @@ const metadata = {
   manifest: "https://remcostoeten.nl/site.webmanifest",
 }
 
+
 export default function RootLayout({
   children,
 }: {
@@ -73,16 +74,13 @@ export default function RootLayout({
             </span>
             <PageHeaderDescription>
               <span className="cursor-hover ">
-                Simply paste in your HTML and get the JSX/TSX version. When you
-                want to prefix the output with{" "}
-                <pre className="inline-block"> 'use client '</pre> for NextJS
-                simply toggle the switch. When using TypeScript you can also get
-                a version with the types included by filling in the props but they are not required.
+                Simply paste in your HTML and watch the magic happen. Also supports conversion of SVG's.🚀🪄
               </span>
             </PageHeaderDescription>
           </PageHeader>
           <main>
             {children}
+
           </main>
         </div>
         <Analytics />

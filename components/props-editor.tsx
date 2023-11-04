@@ -26,7 +26,7 @@ const PropsEditor = ({
       transition={{ type: "spring", stiffness: 150, damping: 15, delay: 1 }}
       className=" flex"
     >
-      <div className="flex w-full items-center">
+      <div className="flex w-full items-center gap-4">
         {propsArray.map((propValue, index) => (
           <motion.div
             key={index}
@@ -55,7 +55,7 @@ const PropsEditor = ({
                     />
                     <svg
                       className="
-                        absolute 
+                        absolute
                         w-4 h-4 mt-1
                         hidden peer-checked:block"
                       xmlns="http://www.w3.org/2000/svg"
