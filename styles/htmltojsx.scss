@@ -1,0 +1,33 @@
+.html-to-jsx {
+    background text-[#eee] -color: #08090A;
+}
+
+.black-block {
+    background text-[#eee] -color: #101010;
+    border: 1px solid #363333;
+    color: #f1f1ef;
+
+    &--section {
+        padding: 24px;
+    }
+
+    &--no-border {
+        border: none;
+    }
+
+    &--border-left {
+        border-left: 1px solid #363333;
+        border-top: 0;
+        border-right: 0;
+        border-bottom: 0;
+    }
+}
+
+.view-lines.monaco-mouse-cursor-text {
+    @extend .black-block;
+    @extend .black-block--section;
+}
+
+.margin-view-overlays {
+    display: none !important;
+}
