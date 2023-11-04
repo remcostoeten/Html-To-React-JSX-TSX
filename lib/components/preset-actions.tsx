@@ -29,9 +29,7 @@ import {
   DropdownMenuSeparator,
   DropdownMenuTrigger,
 } from "@/components/ui/dropdown-menu"
-import { Label } from "@/components/ui/label"
-import { Switch } from "@/components/ui/switch"
-import { toast } from "@/components/ui/use-toast"
+import { toast } from "sonner"
 
 export function PresetActions() {
   const [open, setIsOpen] = React.useState(false)
@@ -80,9 +78,7 @@ export function PresetActions() {
                 variant="destructive"
                 onClick={() => {
                   setShowDeleteDialog(false)
-                  toast({
-                    description: "This preset has been deleted.",
-                  })
+                  toast.success("Preset deleted")
                 }}
               >
                 Delete
