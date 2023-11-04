@@ -18,7 +18,7 @@ import {
   PopoverTrigger,
 } from "@/components/ui/popover"
 
-import { Preset } from "../data/presets"
+import { Preset } from "@/data/presets"
 import { cn } from "@/lib/utils"
 
 interface PresetSelectorProps extends PopoverProps {

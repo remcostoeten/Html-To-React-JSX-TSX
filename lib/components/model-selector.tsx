@@ -3,7 +3,7 @@
 'use client';
 
 import { AnimatePresence, motion } from 'framer-motion';
-import { AppContext } from '../AppContext';
+import { AppContext } from '@context/AppContext';
 import { Collapsible, CollapsibleContent } from '@radix-ui/react-collapsible';
 import { Label } from '@/components/ui/label';
 import { Switch } from '@/components/ui/switch';
@@ -14,7 +14,7 @@ function ModelSelector({ models, types }) {
     const [selectedModel, setSelectedModel] = useState(models[0]);
     const [peekedModel, setPeekedModel] = useState(models[0]);
     const {
-   
+
         isTypescript,
         setIsTypescript,
         isClientComponent,
