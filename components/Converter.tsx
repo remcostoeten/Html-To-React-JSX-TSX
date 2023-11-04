@@ -13,15 +13,15 @@ import { Textarea } from '@/components/ui/textarea';
 
 import { AppContext } from '@/context/AppContext';
 import { models, types } from '@/data/models';
-import ModelSelector from '@/lib/components/model-selector';
-import PropsEditor from '@/lib/components/props-editor';
-import { PresetShare } from '@/lib/components/preset-share';
-import { PresetActions } from '@/lib/components/preset-actions';
-import { MaxLengthSelector } from '@/lib/components/maxlength-selector';
-import { PresetSave } from '@/lib/components/preset-save';
-import { CodeViewer } from '@/lib/components/code-viewer';
+import PropsEditor from '@/components/props-editor';
+import { PresetShare } from '@/components/preset-share';
+import { PresetActions } from '@/components/preset-actions';
+import { MaxLengthSelector } from '@/components/maxlength-selector';
+import { PresetSave } from '@/components/preset-save';
+import { CodeViewer } from '@/components/code-viewer';
+import ModelSelector from '@/components/model-selector';
 
-export default function PlaygroundPage() {
+export default function Converter() {
     const [code, setCode] = useState<string | undefined>('// Enter HTML here');
     const [jsx, setJSX] = useState<string>('');
     const editorRef = useRef<any | null>(null);
@@ -280,15 +280,7 @@ export default function PlaygroundPage() {
                 }}
             >
                 <motion.div
-                    initial={{ y: -10, opacity: 0 }}
-                    animate={{ y: 0, opacity: 1 }}
-                    exit={{ opacity: 0, y: 10 }}
-                    transition={{
-                        type: 'spring',
-                        stiffness: 150,
-                        damping: 155,
-                        delay: 0.47,
-                    }}
+
                     className='overflow-hidden black-block black-block--section shadow'
                 >
                     <div className='container'>
@@ -340,19 +332,7 @@ export default function PlaygroundPage() {
                                                         <CopyIcon />
                                                     </button>
                                                     <motion.div
-                                                        initial={{
-                                                            opacity: 0,
-                                                            scale: 0.9,
-                                                        }}
-                                                        animate={{
-                                                            opacity: 1,
-                                                            scale: 1,
-                                                        }}
-                                                        exit={{ opacity: 0, y: 10 }}
-                                                        transition={{
-                                                            damping: 15,
-                                                            delay: 1,
-                                                        }}
+
                                                     >
                                                         <Editor
                                                             height='60vh'
@@ -380,15 +360,6 @@ export default function PlaygroundPage() {
                                                             }
                                                         />
                                                     </motion.div>
-                                                    <div className='flex items-center space-x-2'>
-                                                        <Button>Submit</Button>
-                                                        <Button variant='secondary'>
-                                                            <span className='sr-only'>
-                                                                Show history
-                                                            </span>
-                                                            <CounterClockwiseClockIcon className='w-4 h-4' />
-                                                        </Button>
-                                                    </div>
                                                 </div>
                                             </TabsContent>
                                             <TabsContent
@@ -397,19 +368,7 @@ export default function PlaygroundPage() {
                                             >
                                                 <div className='flex flex-col space-y-4'>
                                                     <motion.div
-                                                        initial={{
-                                                            opacity: 0,
-                                                            x: 20,
-                                                        }}
-                                                        animate={{
-                                                            opacity: 1,
-                                                            x: 0,
-                                                        }}
-                                                        exit={{ opacity: 0, y: 10 }}
-                                                        transition={{
-                                                            damping: 15,
-                                                            delay: 1,
-                                                        }}
+
                                                         className='grid h-full grid-rows-2 gap-6 lg:grid-cols-2 lg:grid-rows-1'
                                                     >
                                                         <Editor
@@ -438,22 +397,7 @@ export default function PlaygroundPage() {
                                                             }
                                                         />
                                                         <motion.div
-                                                            initial={{
-                                                                opacity: 0,
-                                                                x: 20,
-                                                            }}
-                                                            animate={{
-                                                                opacity: 1,
-                                                                x: 0,
-                                                            }}
-                                                            exit={{
-                                                                opacity: 0,
-                                                                y: 10,
-                                                            }}
-                                                            transition={{
-                                                                damping: 15,
-                                                                delay: 1,
-                                                            }}
+
                                                             className='relative'
                                                         >
                                                             <button
@@ -498,15 +442,6 @@ export default function PlaygroundPage() {
                                                             />
                                                         </motion.div>
                                                     </motion.div>
-                                                    <div className='flex items-center space-x-2'>
-                                                        <Button>Submit</Button>
-                                                        <Button variant='secondary'>
-                                                            <span className='sr-only'>
-                                                                Show history
-                                                            </span>
-                                                            <CounterClockwiseClockIcon className='w-4 h-4' />
-                                                        </Button>
-                                                    </div>
                                                 </div>
                                             </TabsContent>
 
@@ -538,15 +473,6 @@ export default function PlaygroundPage() {
                                                             </div>
                                                         </div>
                                                         <div className='min-h-[400px] rounded-md border bg-muted lg:min-h-[700px]' />
-                                                    </div>
-                                                    <div className='flex items-center space-x-2'>
-                                                        <Button>Submit</Button>
-                                                        <Button variant='secondary'>
-                                                            <span className='sr-only'>
-                                                                Show history
-                                                            </span>
-                                                            <CounterClockwiseClockIcon className='w-4 h-4' />
-                                                        </Button>
                                                     </div>
                                                 </div>
                                             </TabsContent>
