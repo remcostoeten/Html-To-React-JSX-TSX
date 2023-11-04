@@ -64,8 +64,8 @@ export default function RootLayout({
         <link rel="apple-touch-icon" href={metadata.icons.apple} />
         <link rel="manifest" href={metadata.manifest} />
       </Head>
-      <body className='black-block relative container section black-block--section rounded-sm'>
-        <div style={{ position: 'absolute', right: '0', top: '0', zIndex: 9999 }}>
+      <body className='text-white relative container section black-block--section rounded-sm'>
+        <div style={{ position: 'absolute', right: '10%', top: '5%', zIndex: 9999 }}>
           <CustomStatusBadge title="beta" emojiKey="rocket" index={0} />
           <CustomStatusBadge title="wip" emojiKey="fire" index={1} />
           <PageHeader>

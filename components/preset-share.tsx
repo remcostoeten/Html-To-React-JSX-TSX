@@ -34,10 +34,6 @@ export function PresetShare() {
               className="h-9"
             />
           </div>
-          <Button type="submit" size="sm" className="px-3">
-            <span className="sr-only">Copy</span>
-            <CopyIcon className="h-4 w-4" />
-          </Button>
         </div>
       </PopoverContent>
     </Popover>

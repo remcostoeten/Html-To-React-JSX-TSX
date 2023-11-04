@@ -284,11 +284,9 @@ export default function PlaygroundPage() {
                     className='overflow-hidden black-block black-block--section shadow'
                 >
                     <div className='flex-col hidden h-full md:flex '>
-                        <div className=' relative mb-1.5 mt-8 flex items-start justify-between space-y-2 pb-4 pl-4 pt-0 pt-4 sm:flex-row sm:items-end sm:space-y-0.5 md:h-16'>
+                        <div className=' relative mb-1.5 mt-8 flex items-start justify-between space-y-2 pb-4 pl-4 pt-4 sm:flex-row sm:items-end sm:space-y-0.5 md:h-16'>
                             <div className='flex flex-col gap-2 w-min'>
-                                <Label className='translate-x-2.5'>
-                                    What is the component name?
-                                </Label>
+
                                 <Input
                                     type='text'
                                     className='note-border placeholder:text-red-400] jsx-input w-[auto]'
@@ -362,15 +360,6 @@ export default function PlaygroundPage() {
                                                         }
                                                     />
                                                 </motion.div>
-                                                <div className='flex items-center space-x-2'>
-                                                    <Button>Submit</Button>
-                                                    <Button variant='secondary'>
-                                                        <span className='sr-only'>
-                                                            Show history
-                                                        </span>
-                                                        <CounterClockwiseClockIcon className='w-4 h-4' />
-                                                    </Button>
-                                                </div>
                                             </div>
                                         </TabsContent>
                                         <TabsContent
@@ -453,15 +442,6 @@ export default function PlaygroundPage() {
                                                         />
                                                     </motion.div>
                                                 </motion.div>
-                                                <div className='flex items-center space-x-2'>
-                                                    <Button>Submit</Button>
-                                                    <Button variant='secondary'>
-                                                        <span className='sr-only'>
-                                                            Show history
-                                                        </span>
-                                                        <CounterClockwiseClockIcon className='w-4 h-4' />
-                                                    </Button>
-                                                </div>
                                             </div>
                                         </TabsContent>
 
@@ -494,15 +474,7 @@ export default function PlaygroundPage() {
                                                     </div>
                                                     <div className='min-h-[400px] rounded-md border bg-muted lg:min-h-[700px]' />
                                                 </div>
-                                                <div className='flex items-center space-x-2'>
-                                                    <Button>Submit</Button>
-                                                    <Button variant='secondary'>
-                                                        <span className='sr-only'>
-                                                            Show history
-                                                        </span>
-                                                        <CounterClockwiseClockIcon className='w-4 h-4' />
-                                                    </Button>
-                                                </div>
+
                                             </div>
                                         </TabsContent>
                                     </div>
