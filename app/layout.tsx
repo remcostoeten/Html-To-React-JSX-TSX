@@ -6,7 +6,6 @@ import {
   PageHeader,
   PageHeaderDescription
 } from "@/components/ui/page-nav"
-import Typewriter from "@/components/alternating-text"
 import { LayoutProps } from '@/types/types'
 import '@/styles/globals.scss'
 import { Inter } from 'next/font/google'
@@ -70,7 +69,7 @@ export default function RootLayout({
           <CustomStatusBadge title="wip" emojiKey="fire" index={1} />
           <PageHeader>
             <span className="inline-block  space-y-4 font-heading text-4xl sm:mb-0 lg:text-5xl">
-              Convert your HTML to <Typewriter />
+              Convert your HTML to React JSX or TSX
             </span>
             <PageHeaderDescription>
               <span className="cursor-hover ">
